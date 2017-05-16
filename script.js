@@ -1,15 +1,17 @@
 var list = document.getElementById('list');
-var add = document.getElementById('button');
+var add = document.getElementById('addElem');
 
 add.addEventListener('click', function() {
     var element = document.createElement('li');
-
+    var len = list.children.length;
+    element.innerText = 'item ' + len;
+    list.appendChild(element);
 });
 
-var listElement = document.getElementsByTagName = ('li');
-element.innerHTML = 'item';
-var countOfListElement = listElement.lenght;
+// var listElement = document.getElementsByTagName = ('li');
 
-list.appendChild(element);
-console.log(countOfListElement);
+// var countOfListElement = listElement.lenght;
+
+// list.appendChild(element);
+// console.log(countOfListElement);
 
